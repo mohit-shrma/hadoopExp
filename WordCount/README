@@ -1,0 +1,8 @@
+Here code is used with hadoop streaming to demonstrate map-reduce using python scripts
+
+reference "http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/"
+
+advanced versions of script employ use of generators and iterators 
+
+typical command employing stream looks as follow:
+hadoop jar contrib/streaming/hadoop-streaming-0.20.2-cdh3u5.jar -file ~/dev/github/hadoopExp/WordCount/mapperAdv.py -mapper ~/dev/github/hadoopExp/WordCount/mapperAdv.py -file ~/dev/github/hadoopExp/WordCount/reducerAdv.py -reducer ~/dev/github/hadoopExp/WordCount/reducerAdv.py -input /user/mohit/gutenberg/* -output /user/mohit/gutenberg-output 
