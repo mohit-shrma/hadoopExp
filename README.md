@@ -1,4 +1,3 @@
-hadoopExp
-=========
 
-contains some map reduce codes which i try on my desktop single node cluster
+
+contains some map reduce code which I tried on my desktop single node cluster
