@@ -1,0 +1,5 @@
+Find join of two relations in form R(A,B) , S(B,C)
+Input is a relation 
+input is in form of "RelationName,ColA,ColB"
+
+hadoop jar contrib/streaming/hadoop-streaming-0.20.2-cdh3u5.jar -file ~/dev/github/hadoopExp/NaturalJoin/joinMapper.py -mapper ~/dev/github/hadoopExp/NaturalJoin/joinMapper.py -file ~/dev/github/hadoopExp/NaturalJoin/joinReducer.py -reducer ~/dev/github/hadoopExp/NaturalJoin/joinReducer.py -file ~/dev/github/hadoopExp/NaturalJoin/RelationConsts.py  -input /user/mohit/joinIp/* -output /user/mohit/joinOp 
