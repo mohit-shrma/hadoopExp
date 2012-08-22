@@ -1,2 +1,3 @@
 This will get compute the typical transition matrix X vector product used to compute page rank in a web graph.
+hadoop jar $HADOOP_HOME/contrib/streaming/hadoop-streaming-0.20.2-cdh3u5.jar -file matProdMapper.py -mapper matProdMapper.py -file matProdReducer.py -reducer matProdReducer.py -file SparseMatConsts.py -file MapIpSeparators.py -input /user/mohit/matProdIp/* -output /user/mohit/matProdOp
 
