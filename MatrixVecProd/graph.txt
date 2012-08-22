@@ -1,0 +1,5 @@
+Source	Degree	Destinations
+A	3	B,C,D
+B	2	A,D
+C	1	A
+D	2	B,C
